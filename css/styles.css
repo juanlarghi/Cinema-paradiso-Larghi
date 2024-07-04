@@ -1,0 +1,172 @@
+/*! ---RESET--- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial;
+}
+
+/* ----HEADER-----*/
+
+header {
+    background-color: black;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    color: white;
+    font-family: Arial;
+    font-size: 15px;
+    display: flex;
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    filter: brightness(0) invert(1);
+    width: 30px;
+    height: auto;
+    padding: auto;
+    margin-right: 5px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: auto;
+}
+
+/* ----MAIN-----*/
+
+.estrenos {
+    background-color: slategray;
+    padding: 15px;
+    align-items: center;
+}
+
+.slider-frame {
+    display: flex;
+    overflow: hidden;
+    height: auto;
+    width: 1200px;
+    margin-top: 5px;
+}
+
+/* ----SLIDE ANIMACION-----*/
+
+@-webkit-keyframes slide_animation {
+    0% {left:0px;}
+    10% {left:0px;}
+    20% {left:1200px;}
+    30% {left:1200px;}
+    40% {left: 2400px;}
+    50% {left: 2400px;}
+    60% {left: 1200px;}
+    70% {left: 1200px;}
+    80% {left: 0px;}
+    90% {left: 0px;}
+    100% {left:0px;}
+}
+
+.slide-images {
+    width: 3600px;
+    height: auto;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 33s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+
+.img-container {
+    height: auto;
+    width: 1200px;
+    float: left;
+}
+
+/* ------FILTER SECTION-------*/
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: burlywood;
+    padding: 25px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+  }
+
+  .filter form {
+    display: flex;
+    gap: 1rem;
+    margin: 10px;
+    align-items: center;
+    padding: auto;
+  }
+
+  .filter button {
+    background-color: white;
+    color: black; 
+    font-size: large;
+}
+
+/*----CARTELERA------*/
+
+.cartelera {
+    padding: 15px;
+    background-color: black;
+    color: white;
+}
+
+.movies-container {
+    max-width:  1800px;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px,auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.poster .poster-img {
+    width: 100%;
+    height: 280px;
+    cursor: pointer;
+}
+
+.poster .poster-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.icon {
+    width: 30px;
+    height: auto;
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+/* ----FOOTER-----*/
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 15px;
+    font-family: Arial;
+}
+
+footer p {
+    color: white;
+}
+

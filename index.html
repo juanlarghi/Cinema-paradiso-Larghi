@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="./css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Paradiso</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./img/camara.png"/>
+</head>
+<body>
+    <!-- comments -->
+    <header>
+        <div>
+            <h1><img src="./img/camara.png" alt="camara-cine">Cinema Paradiso</h1>
+        </div>
+        <nav>
+            <ul>
+                <!-- Enlaces relativos -->
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                <li><a href="./pages/proximos.html">Proximos estrenos</a></li>
+                <li><a href="./pages/noticias.html">Noticias</a></li>
+                <!-- Enlaces internos -->
+                <li><a href="#contactos">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="estrenos">
+            <!-- Slideshow container -->
+            <h1>Estrenos</h1>
+            <div class="slider-frame">
+                <div class="slide-images">
+                    <div class="img-container">
+                        <img src="./img/img1.webp" alt="oppenheimer">
+                    </div>
+                    <div class="img-container">
+                        <img src="./img/img2.webp" alt="deadpool3">
+                    </div>
+                    <div class="img-container">
+                        <img src="./img/img3.webp" alt="popcorn">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="filter">
+            <form id="filter-form" method="get" action="">                
+                    <legend>Complejo</legend>
+                    <select type="dropdown" id="complejo">
+                        <option value="">(elija un complejo)</option>
+                        <option value="1">Cine 1</option>
+                        <option value="2">Cine 2</option>
+                    </select>
+                    <legend>Pelicula</legend>
+                    <select type="dropdown" id="pelicula">
+                        <option value="">(elija una opcion)</option>
+                        <option value="1">Oppenheimer</option>
+                        <option value="2">Deadpool 3</option>
+                        <option value="2">Challengers</option>
+                        <option value="2">Furiosa</option>
+                        <option value="2">Intensamente 2</option>
+                    </select>
+                    <legend>Formato</legend>
+                    <label for="formato"><input id="2d" type="radio" name="formato" class="inline" value="2D"/> 2D</label>
+                    <label for="formato"><input id="3d" type="radio" name="formato" class="inline" value="3D"/> 3D</label>
+                    <legend>Idioma</legend>
+                    <label for="idioma"><input id="sub" type="radio" name="idioma" class="inline" value="Subtitulado"/> Subtitulado</label>
+                    <label for="idioma"><input id="esp" type="radio" name="idioma" class="inline" value="Español"/> Español</label>
+                <button type="submit" name="submit" value="submit">Ver todo</button>
+            </form>
+        </section>
+        <section class="cartelera">
+            <h2>Cartelera</h2>
+            <div class="peliculas" id="peliculas">
+                <div class="movies-container">
+                    <!--poster-1-->
+                    <div class="poster">
+                        <div class="poster-img">
+                            <img src="./img/poster1.jpg" alt="">
+                        </div>
+                        <h3>Oppenheimer</h3>
+                        <span>180 min | Suspenso</span>
+                    </div>
+                    <!--poster-2-->
+                    <div class="poster">
+                        <div class="poster-img">
+                            <img src="./img/poster2.jpg" alt="">
+                        </div>
+                        <h3>Barbie</h3>
+                        <span>180 min | Drama</span>
+                    </div>
+                    <!--poster-3-->
+                    <div class="poster">
+                        <div class="poster-img">
+                            <img src="./img/poster3.jpg" alt="">
+                        </div>
+                        <h3>Challengers</h3>
+                        <span>160 min | Drama</span>
+                    </div>
+                    <!--poster-4-->
+                    <div class="poster">
+                        <div class="poster-img">
+                            <img src="./img/poster4.jpg" alt="">
+                        </div>
+                        <h3>Furiosa</h3>
+                        <span>148 min | Accion</span>
+                    </div>
+                    <!--poster-5-->
+                    <div class="poster">
+                        <div class="poster-img">
+                            <img src="./img/poster5.jpg" alt="">
+                        </div>
+                        <h3>Intensamente 2</h3>
+                        <span>100 min | Infantil</span>
+                    </div>
+                    <!--poster-6-->
+                    <div class="poster">
+                        <div class="poster-img">
+                            <img src="./img/poster6.jpg" alt="">
+                        </div>
+                        <h3>Deadpool 3</h3>
+                        <span>180 min | Aventura</span>
+                    </div>
+                     <!--poster-7-->
+                     <div class="poster">
+                        <div class="poster-img">
+                            <img src="./img/poster7.jpg" alt="">
+                        </div>
+                        <h3>Joker 2: Folie Á Deux</h3>
+                        <span>180 min | Drama</span>
+                    </div>
+                     <!--poster-8-->
+                     <div class="poster">
+                        <div class="poster-img">
+                            <img src="./img/poster8.jpg" alt="">
+                        </div>
+                        <h3>Dune Parte 2</h3>
+                        <span>210 min | Aventura</span>
+                    </div>
+                     <!--poster-9-->
+                     <div class="poster">
+                        <div class="poster-img">
+                            <img src="./img/poster9.jpg" alt="">
+                        </div>
+                        <h3>Planet Of The Apes</h3>
+                        <span>190 min | Infantil</span>
+                    </div>
+                     <!--poster-10-->
+                     <div class="poster">
+                        <div class="poster-img">
+                            <img src="./img/poster10.jpg" alt="">
+                        </div>
+                        <h3>Gardfield</h3>
+                        <span>108 min | Infantil</span>
+                    </div>
+                     <!--poster-11-->
+                     <div class="poster">
+                        <div class="poster-img">
+                            <img src="./img/poster11.jpg" alt="">
+                        </div>
+                        <h3>Mi Villano Favorito 4</h3>
+                        <span>108 min | Infantil</span>
+                    </div>
+                     <!--poster-11-->
+                     <div class="poster">
+                        <div class="poster-img">
+                            <img src="./img/poster12.jpg" alt="">
+                        </div>
+                        <h3>Madame Web</h3>
+                        <span>120 min | Accion</span>
+                    </div>
+                     <!--poster-11-->
+                     <div class="poster">
+                        <div class="poster-img">
+                            <img src="./img/poster13.jpg" alt="">
+                        </div>
+                        <h3>Wicked</h3>
+                        <span>160 min | Aventura</span>
+                    </div>
+                     <!--poster-11-->
+                     <div class="poster">
+                        <div class="poster-img">
+                            <img src="./img/poster14.jpg" alt="">
+                        </div>
+                        <h3>GK</h3>
+                        <span>170 min | Accion</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+     
+    </main>
+        <footer id="contactos">
+            <div>
+                <p>Contactos - contacto@gmail.com</p>
+                <p>Copyright (c) 2024. All rights reserved</p>
+                <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png" alt="instagram icon" class="icon"></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook.png" alt="facebook icon" class="icon"></a>
+        <a href="https://www.whatsapp.com/" target="_blank"><img src="./img/whatsapp.png" alt="whatsapp icon" class="icon"></a>
+    </div>
+</footer>
+</body>
+</html>
