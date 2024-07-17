@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cinema Paradiso</title>
@@ -11,18 +11,23 @@
 <body>
     <!-- comments -->
     <header>
-        <div>
-            <h1><img src="../img/camara.png" alt="camara-cine">Cinema Paradiso</h1>
-        </div>
-        <nav>
-            <ul>
-                <!-- Enlaces relativos -->
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./proximos.html">Proximos estrenos</a></li>
-                <li><a href="./noticias.html">Noticias</a></li>
-                <!-- Enlaces internos -->
-                <li><a href="#contactos">Contacto</a></li>
+        <a href="../index.html" class="logo">
+            <i><img src="../img/camara.png" alt="logo"></i>Cinema Paradiso
+        </a>
+        <nav>  
+            <ul class="navbar">
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <!-- Enlaces relativos -->
+                    <li><a href="../index.html" class="home-active">Inicio</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./proximos.html">Proximos estrenos</a></li>
+                    <li><a href="./noticias.html">Noticias</a></li>
+                    <!-- Enlaces internos -->
+                    <li><a href="#contactos">Contacto</a></li>
+                    <label for="check" class="close-menu"><i><img src="../img/exit.png" alt="exit"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i><img src="../img/menu.png" alt="menu"></i></label>
             </ul>
         </nav>
     </header>
