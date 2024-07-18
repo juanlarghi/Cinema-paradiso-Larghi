@@ -9,6 +9,10 @@
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial;
 }
@@ -16,49 +20,58 @@ body {
 /* ----HEADER-----*/
 
 header {
-    position: sticky;
-    background-color: black;
-    width: 100%;
-    padding: 15px;
-    top: 0;
-    z-index: 1000;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: sticky !important;
+    background-color: black !important;
+    width: 100% !important;
+    padding: 15px !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+    color: white !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    text-decoration: none !important;
+    align-items: center !important;
 }
 
 .logo {
+    margin-top: 5px;
     font-size: 1.5rem;
     font-weight: 600;
-    align-items: center;
     color: white;
     display: flex;
     column-gap: 0.5rem;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 0;
 }
 
 header img {
     filter: brightness(0) invert(1);
-    width: 30px;
+    width: 40px;
     height: auto;
-    padding: auto;
+    padding: 5px;
     margin-right: 5px;
+    align-items: center !important;
+    margin-bottom: 5px;
+    margin-top: 0;
 }
 
 header nav ul {
-    list-style: none;
-    padding: auto;
+    list-style: none !important;
+    padding: auto !important;
+    margin-bottom: 0;
 }
 
 .menu {
     display: flex;
-    column-gap: 5rem;
+    column-gap: 4rem;
 }
 
 .menu a {
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-size: 1.1rem;
+    font-weight: 600;
     color: white;
+    text-decoration: none !important;
 }
 
 .open-menu, .close-menu {
@@ -67,6 +80,7 @@ header nav ul {
     cursor: pointer;
     font-size: 1.5rem;
     display: none;
+    text-decoration: none !important;
 }
 
 .open-menu {
@@ -114,79 +128,53 @@ header nav ul {
 
 /* ----MAIN-----*/
 
-.estrenos {
-    background-color: slategray;
-    padding: 20px;
-    align-content: center;
-}
-
-.slider-frame {
-    display: flex;
-    overflow: hidden;
-    height: auto;
-    width: 1200px;
-    margin-top: 5px;
-    align-items: center;
-}
-
-/* ----SLIDE ANIMACION-----*/
-
-@-webkit-keyframes slide_animation {
-    0% {left:0px;}
-    10% {left:0px;}
-    20% {left:1200px;}
-    30% {left:1200px;}
-    40% {left: 2400px;}
-    50% {left: 2400px;}
-    60% {left: 1200px;}
-    70% {left: 1200px;}
-    80% {left: 0px;}
-    90% {left: 0px;}
-    100% {left:0px;}
-}
-
-.slide-images {
-    width: 3600px;
-    height: auto;
-    margin: 0 0 0 -2400px;
+.c-item {
+    width: 100%;
+    height: 42rem;
+    background: slategray;
+    color: white;
     position: relative;
-    -webkit-animation-name: slide_animation;
-    -webkit-animation-duration: 33s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    -webkit-animation-play-state: running;
+    background-position: center;
+    background-size: cover;
 }
 
-.img-container {
-    height: auto;
-    width: 1200px;
-    float: left;
+.c-img {
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+}
+
+.c-cap {
+    top: 0;
+    right: 100px;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: right;
 }
 
 /* ------FILTER SECTION-------*/
 
 .filter {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: burlywood;
-    padding: 25px;
+    padding: 15px;
     color: white;
-    font-size: 20px;
-    font-family: Arial;
+    font-size: 1.1rem;
   }
 
   .filter form {
     display: flex;
-    gap: 1rem;
-    margin: 10px;
+    justify-content: space-between;
+    column-gap: 1rem;
+    margin-left: 50px;
+    margin-right: 50px;
     padding: auto;
+    align-items: center;
   }
 
   .filter button {
     background-color: white;
-    color: black; 
-    font-size: large;
+    color: black;
 }
 
 /*----CARTELERA------*/
@@ -197,8 +185,24 @@ header nav ul {
     color: white;
 }
 
+.proximos, .noticias, .nosotros {
+    background-color: slategray;
+    padding: 15px;
+    color: black
+}
+
 .movies-container {
     max-width:  1800px;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px,auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.proximos .movies-container {
+    max-width: 800px;
     margin-right: auto;
     margin-left: auto;
     display: grid;
@@ -231,13 +235,10 @@ header nav ul {
 }
 
 footer {
+    width: auto;
     background-color: black;
+    color: white;
     text-align: center;
     padding: 15px;
-    font-family: Arial;
+    margin: 0;
 }
-
-footer p {
-    color: white;
-}
-
