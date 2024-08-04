@@ -77,6 +77,10 @@ header nav ul {
 
 .open-menu, .close-menu {
     position: absolute;
+    width: 40px;
+    height: auto;
+    padding: 5px;
+    margin: 0;
     color: white;
     cursor: pointer;
     font-size: 1.5rem;
@@ -86,13 +90,13 @@ header nav ul {
 
 .open-menu {
     top: 50%;
-    right: 20px;
+    right: 10px;
     transform: translateY(-50%);
 }
 
 .close-menu {
     top: 20px;
-    right: 20px;
+    right: 10px;
 }
 
 #check {
@@ -242,7 +246,7 @@ label {
     }
 }
 
-@media(max-width: 830px){
+@media(max-width: 1080px){
     .movies-container {
         display: flex;
         max-width: 350px;
@@ -256,6 +260,17 @@ label {
         width: 80%;
         height: 80%;
         object-fit: cover;
+    }
+    .proximos .peliculas .movies-container {
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 2rem;
+    }
+}
+
+@media(max-width: 770px){
+    .proximos .peliculas .movies-container .card-prox .sinopsis {
+        display: none;
     }
 }
 
@@ -278,6 +293,8 @@ label {
     margin-right: auto;
     margin-left: auto;
     display: grid;
+    align-items: center;
+    align-content: center;
     grid-template-columns: repeat(auto-fit, minmax(180px,auto));
     gap: 1rem;
     margin-top: 2rem;
@@ -312,6 +329,20 @@ label {
 
 /*----PROXIMOS ESTRENOS------*/
 
+.proximos .header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.proximos .searchbar {
+    width: 300px;
+    display: flex;
+    border-radius: 8px;
+}
+
 .proximos .movies-container {
     max-width: 1400px;
     margin-right: auto;
@@ -320,6 +351,7 @@ label {
     grid-template-columns: 50% 50%;
     gap: 1rem;
     margin-top: 2rem;
+    align-items: center;
 }
 
 .proximos .card-prox {
@@ -387,6 +419,27 @@ iframe {
     height: 500px;
 }
 
+/* ----CANDYSHOP-----*/
+
+.candyshop {
+    align-items: center;
+}
+
+.candyshop .col-promos{
+    max-width: 350px;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.candyshop .promos .card-promos .card-body {
+    align-content: center;
+    text-align: center;
+ }
+
 /* ----FOOTER-----*/
 
 .icon {
@@ -406,4 +459,3 @@ footer {
     text-align: center;
     padding: 15px;
 }
-
