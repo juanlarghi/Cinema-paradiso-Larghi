@@ -95,8 +95,8 @@ header nav ul {
 }
 
 .close-menu {
-    top: 20px;
-    right: 10px;
+    top: 10px;
+    right: 20px;
 }
 
 #check {
@@ -249,32 +249,38 @@ label {
 @media(max-width: 1080px){
     .movies-container {
         display: flex;
-        max-width: 350px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         row-gap: 20px;
-        z-index: 100;
     }
-    .poster .poster-img img {
-        width: 80%;
-        height: 80%;
-        object-fit: cover;
-    }
-    .proximos .peliculas .movies-container {
+    .proximos .peliculas2 .movies-container {
+        width: 350px;
         display: flex;
         gap: 0.5rem;
-        margin-top: 2rem;
+    }
+}
+
+@media(max-width: 1380px){
+    .candy-gallery {
+        flex-direction: column;
+    }
+    .candy-gallery div {
+        align-items: center;
+        margin: 0;
+    }
+    .candy-gallery p {
+        font-size: 5px;
     }
 }
 
 @media(max-width: 770px){
-    .proximos .peliculas .movies-container .card-prox .sinopsis {
+    .proximos .peliculas2 .movies-container .card-prox .sinopsis {
         display: none;
     }
 }
 
-.proximos, .noticias, .nosotros, .candyshop{
+.proximos, .noticias, .nosotros, .candyshop, .candy-gallery {
     background-color: burlywood;
     padding: 15px;
     color: white;
@@ -289,13 +295,14 @@ label {
 }
 
 .movies-container {
-    max-width: 1800px;
+    max-width: 1400px;
     margin-right: auto;
     margin-left: auto;
     display: grid;
     align-items: center;
     align-content: center;
     grid-template-columns: repeat(auto-fit, minmax(180px,auto));
+    z-index: 100;
     gap: 1rem;
     margin-top: 2rem;
 }
@@ -318,9 +325,10 @@ label {
 }
 
 .poster h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
     padding-top: 5px;
+    font-weight: 400;
 }
 
 .poster span {
@@ -328,6 +336,15 @@ label {
 }
 
 /*----PROXIMOS ESTRENOS------*/
+
+.peliculas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    align-content: center;
+}
 
 .proximos .header {
     position: relative;
@@ -351,6 +368,7 @@ label {
     grid-template-columns: 50% 50%;
     gap: 1rem;
     margin-top: 2rem;
+    z-index: 100;
     align-items: center;
 }
 
@@ -362,6 +380,7 @@ label {
 
 .proximos h5 {
     padding-bottom: 15px;
+    font-weight: 600;
 }
 
 .proximos .sinopsis {
@@ -402,6 +421,7 @@ label {
     height: 500px;
     object-fit: cover;
     margin-bottom: 15px;
+    border-radius: 8px;
 }
 
 .location {
@@ -421,14 +441,14 @@ iframe {
 
 /* ----CANDYSHOP-----*/
 
-.candyshop {
-    align-items: center;
+.candyshop .promos{
+    display: flex;
+    justify-content: center;
 }
 
 .candyshop .col-promos{
     max-width: 350px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0;
     display: grid;
     grid-template-columns: 100%;
     gap: 1rem;
@@ -438,7 +458,43 @@ iframe {
 .candyshop .promos .card-promos .card-body {
     align-content: center;
     text-align: center;
- }
+    font-size: 25px;
+}
+
+.candyshop .promos .card-promos .card-body {
+    align-content: center;
+    text-align: center;
+    font-size: 25px;
+}
+
+.candy-gallery {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.candy-gallery div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    gap: 0.5rem;
+}
+
+.candy-gallery img {
+    width: 650px;
+    height: 400px;
+    border-radius: 8px;
+}
+
+.candy-gallery p {
+    font-size: 20px;
+    margin-top: 10px;
+}
 
 /* ----FOOTER-----*/
 
