@@ -122,6 +122,7 @@ header nav ul {
     }
     .logo {
         color: black;
+        cursor: default;
     }
     .menu li {
         margin-top: 40px;
@@ -137,7 +138,7 @@ header nav ul {
     }
 }
 
-/* ----MAIN-----*/
+/* ----CAROUSEL-----*/
 
 .carousel-inner > .c-item > c-img {
     position: absolute;
@@ -173,6 +174,11 @@ header nav ul {
     text-align: right;
 }
 
+.c-cap a {
+    right: 240px;
+    position: absolute;
+}
+
 .c-cap2 {
     color: black;
     top: 0;
@@ -185,6 +191,9 @@ header nav ul {
 
 @media(max-width: 1080px){
     #hiddenslider{
+        display: none;
+    }
+    #hiddenimg {
         display: none;
     }
 }
@@ -255,22 +264,9 @@ label {
         row-gap: 20px;
     }
     .proximos .peliculas2 .movies-container {
-        width: 350px;
+        width: 650px;
         display: flex;
         gap: 0.5rem;
-    }
-}
-
-@media(max-width: 1380px){
-    .candy-gallery {
-        flex-direction: column;
-    }
-    .candy-gallery div {
-        align-items: center;
-        margin: 0;
-    }
-    .candy-gallery p {
-        font-size: 5px;
     }
 }
 
@@ -278,9 +274,25 @@ label {
     .proximos .peliculas2 .movies-container .card-prox .sinopsis {
         display: none;
     }
+    .proximos .peliculas2 .movies-container {
+        width: 280px;
+        display: flex;
+        gap: 0.5rem;
+    }
+    .candy-gallery div img {
+        width: 300px;
+        height: 220px;
+        align-items: center;
+    }
 }
 
-.proximos, .noticias, .nosotros, .candyshop, .candy-gallery {
+@media(max-width: 1380px){
+    .candy-gallery {
+        flex-direction: column;
+    }
+}
+
+.proximos, .cineclub, .nosotros, .candyshop, .candy-gallery {
     background-color: burlywood;
     padding: 15px;
     color: white;
@@ -366,8 +378,9 @@ label {
     margin-left: auto;
     display: grid;
     grid-template-columns: 50% 50%;
+    padding: 15px;
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     z-index: 100;
     align-items: center;
 }
@@ -461,15 +474,18 @@ iframe {
     font-size: 25px;
 }
 
-.candyshop .promos .card-promos .card-body {
-    align-content: center;
+.candyshop .promos .card-promos img {
+   margin-bottom: 10px;
+}
+
+.candyshop .promos .card-body {
+    padding: 20px;
     text-align: center;
     font-size: 25px;
 }
 
 .candy-gallery {
     display: flex;
-    padding: 10px;
     justify-content: center;
     align-items: center;
 }
@@ -481,8 +497,7 @@ iframe {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px;
-    gap: 0.5rem;
+    padding: 25px;
 }
 
 .candy-gallery img {
@@ -496,9 +511,41 @@ iframe {
     margin-top: 10px;
 }
 
+/* ----NOSOTROS-----*/
+
+.cineclub {
+    align-items: center;
+}
+
+.club-container {
+    max-width: 1400px;
+    display: flex;
+    position: relative;
+    gap: 2rem;
+    margin-top: 1rem;
+    margin-left: 0;
+    align-items: center;
+}
+
+.sub-form {
+    margin-top: 0;
+}
+
+.club-container img {
+    width: 600px;
+    height: auto;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    margin-top: 0;
+}
+
+
 /* ----FOOTER-----*/
 
 .icon {
+    filter: brightness(0) invert(1);
     width: 30px;
     height: auto;
     margin-top: 15px;
