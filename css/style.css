@@ -30,7 +30,7 @@ header {
     align-items: center;
 }
 
-.logo {
+header .logo {
     margin-top: 5px;
     font-size: 1.5rem;
     font-weight: 600;
@@ -138,6 +138,15 @@ header nav ul {
     }
 }
 
+@media(max-width: 1080px){
+    #hiddenslider{
+        display: none;
+    }
+    #hiddenimg {
+        display: none;
+    }
+}
+
 /* ----CAROUSEL-----*/
 
 .carousel-inner > .c-item > c-img {
@@ -189,18 +198,10 @@ header nav ul {
     text-align: right;
 }
 
-@media(max-width: 1080px){
-    #hiddenslider{
-        display: none;
-    }
-    #hiddenimg {
-        display: none;
-    }
-}
 /* ------FILTER SECTION-------*/
 
 .filter {
-    background-color: burlywood;
+    background-color: slategray;
     color: white;
   }
 
@@ -243,7 +244,7 @@ label {
     padding-right: 5px;
 }
 
-/*----MEDIA QUERIES FILTER------*/
+/*----MEDIA QUERIES------*/
 
 @media(max-width: 1080px){
     label{
@@ -292,8 +293,11 @@ label {
     }
 }
 
+
+/*----BASE/GENERAL------*/
+
 .proximos, .cineclub, .nosotros, .candyshop, .candy-gallery {
-    background-color: burlywood;
+    background-color: slategray;
     padding: 15px;
     color: white;
 }
@@ -450,6 +454,7 @@ label {
 iframe {
     width: 90%;
     height: 500px;
+    border-radius: 8px;
 }
 
 /* ----CANDYSHOP-----*/
@@ -475,8 +480,10 @@ iframe {
 }
 
 .candyshop .promos .card-promos img {
-   margin-bottom: 10px;
+    margin-bottom: 10px;
 }
+
+.candyshop .card-promos:hover {opacity: 0.8;}
 
 .candyshop .promos .card-body {
     padding: 20px;
@@ -511,7 +518,7 @@ iframe {
     margin-top: 10px;
 }
 
-/* ----NOSOTROS-----*/
+/* ----CINECLUB-----*/
 
 .cineclub {
     align-items: center;
