@@ -336,23 +336,28 @@ header {
       margin-top: 10px; }
 
 /* ----CINECLUB-----*/
+.cineclub h5 {
+  margin-bottom: 0; }
+
 .cineclub .club-container {
   max-width: 1400px;
   display: flex;
   position: relative;
   gap: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 20px;
-  align-items: center;
-  height: 60vh; }
+  margin-top: 0;
+  align-items: center; }
   .cineclub .club-container .cineclub-img img {
     width: 550px;
     height: auto;
     object-fit: cover;
     border-radius: 8px;
-    margin-top: 20px; }
+    margin-top: 20px;
+    margin-left: 20px; }
   .cineclub .club-container .sub-form {
-    margin-top: 20px; }
+    margin-top: 0; }
+    .cineclub .club-container .sub-form .card-sub {
+      padding: 5px;
+      margin-top: 0; }
 
 footer {
   width: 100%;

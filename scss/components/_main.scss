@@ -287,17 +287,16 @@
 
     }
     h5{
-
+        margin-bottom: 0;
     }
     .club-container{
         max-width: 1400px;
         display: flex;
         position: relative;
         gap: 2rem;
-        margin-top: 1rem;
-        margin-bottom: 20px;
+        margin-top: 0;
         align-items: center;
-        height: 60vh;
+    
         .cineclub-img{
             img{
                 width: 550px;
@@ -305,16 +304,19 @@
                 object-fit: cover;
                 border-radius: 8px;
                 margin-top: 20px;
+                margin-left: 20px;
             }
         }
         .sub-form{
-            margin-top: 20px;
-            .card-body{
+            margin-top: 0;
+            .card-sub{
+                padding: 5px;
+                margin-top: 0;
                 h3{
-    
+
                 }
                 form{
-    
+                    
                 }
             }
         }
