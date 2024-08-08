@@ -1,0 +1,322 @@
+/* ------FILTER SECTION-------*/
+
+.filter{
+    background-color: slategray;
+    color: white;
+    form{
+        max-width: 1800px;
+        display: grid;
+        margin-left: 60px;
+        margin-right: 60px;
+        grid-template-columns: repeat(auto-fit, minmax(160px,auto));
+        gap: 1rem;
+        padding: 10px;
+        padding-bottom: 20px;
+        text-align: center;
+        align-items: center;
+        div{
+            legend{
+
+            }
+            select{
+                border: none;
+                font-size: medium;
+                border-radius: 8px;
+                background-color: whitesmoke;
+                opacity: 0.8;
+                color: slategray;
+                option{
+
+                }
+            }
+        }
+        div{
+            legend{
+
+            }
+            label{
+                padding-right: 5px;
+            }
+        }
+        div{
+            button{
+                font-size: 16px;
+                display: inline-block;
+                width: 100px;
+                padding: 10px 16px;
+            }
+        }
+    }
+}
+
+/*----CARTELERA------*/
+
+.cartelera{
+    padding: 15px;
+    background-color: black;
+    color: white;
+    h2{
+
+    }
+    .peliculas1{
+        .movies-container{
+            max-width: 1400px;
+            margin-right: auto;
+            margin-left: auto;
+            display: grid;
+            align-items: center;
+            align-content: center;
+            grid-template-columns: repeat(auto-fit, minmax(180px,auto));
+            z-index: 100;
+            gap: 1rem;
+            margin-top: 2rem;
+            .poster{
+                .poster-img{
+                    width: 100%;
+                    height: 280px;
+                    cursor: pointer;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        &:hover{
+                            transform: translateY(-10px);
+                            transition: 0.2s all linear;
+                        }
+                    }
+                }
+            }
+            h3{
+                font-size: 1rem;
+                font-weight: 500;
+                padding-top: 5px;
+                font-weight: 400;
+            }
+            span{
+                font-size: 14px;
+            }
+        }
+
+    }
+}
+
+/*----PROXIMOS ESTRENOS------*/
+
+.proximos{
+    .header{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        div{
+            h2{
+    
+            }
+        }
+        .searchbar{
+            width: 300px;
+            display: flex;
+            border-radius: 8px;
+            input{
+    
+            }
+            span{
+                i{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .peliculas2{
+        .movies-container{
+            max-width: 1400px;
+            margin-right: auto;
+            margin-left: auto;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            padding: 15px;
+            gap: 1rem;
+            margin-top: 1rem;
+            z-index: 100;
+            align-items: center;
+            .card-prox{
+                background-color: black;
+                color: white;
+                padding-bottom: 30px; 
+                div{
+                    div{
+                        img{
+
+                        }
+                    }
+                    div{
+                        .card-body{
+                            h5{
+                                padding-bottom: 15px;
+                                font-weight: 600;
+                            }
+                            p{
+
+                            }
+                            .sinopsis{
+                                padding-top: 10px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 4;
+                                        line-clamp: 4;
+                                -webkit-box-orient: vertical;
+                            }
+                            button{
+                                position: absolute;
+                                bottom: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ----NOSOTROS-----*/
+
+.nosotros-container{
+    max-width: 1800px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,auto));
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    .cine-img{
+        img{
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+    }
+    .location{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 0;
+        h4{
+
+        }
+        iframe{
+            width: 90%;
+            height: 500px;
+            border-radius: 8px;
+        }
+    }
+}
+
+/* ----CANDYSHOP-----*/
+
+.promos{
+    display: flex;
+    justify-content: center;
+    .col-promos{
+        max-width: 350px;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 1rem;
+        margin-top: 2rem;
+        .card-promos{
+            img{
+                margin-bottom: 10px;
+                height: 90%;
+            }
+            .card-body{
+                align-content: center;
+                text-align: center;
+                padding: 20px;
+                font-size: 25px;
+                h3{
+
+                }
+                p{
+
+                }
+            }
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+.candy-gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 25px;
+        img{
+            width: 650px;
+            height: 400px;
+            border-radius: 8px;
+        }
+        p{
+            font-size: 20px;
+            margin-top: 10px;
+        }
+    }
+}
+
+/* ----CINECLUB-----*/
+
+.cineclub{
+    h2{
+
+    }
+    h5{
+
+    }
+    .club-container{
+        max-width: 1400px;
+        display: flex;
+        position: relative;
+        gap: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 20px;
+        align-items: center;
+        height: 60vh;
+        .cineclub-img{
+            img{
+                width: 550px;
+                height: auto;
+                object-fit: cover;
+                border-radius: 8px;
+                margin-top: 20px;
+            }
+        }
+        .sub-form{
+            margin-top: 20px;
+            .card-body{
+                h3{
+    
+                }
+                form{
+    
+                }
+            }
+        }
+    }
+}

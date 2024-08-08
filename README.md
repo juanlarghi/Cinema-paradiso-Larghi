@@ -13,7 +13,8 @@ Pagina de Cine donde se informan las peliculas que hay en cartelera, los proximo
 * index
 * contacto
 * nosotros
-* noticias
+* candyshop
 * proximos
+* cineclub
 
 ## Mejoras futuras

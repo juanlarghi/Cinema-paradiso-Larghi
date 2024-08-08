@@ -1,0 +1,92 @@
+/*----MEDIA QUERY MENU------*/
+
+@media(max-width: 1080px){
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: right;
+        width: 55%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: black;
+        transition: all 0.2s ease-in-out;
+        padding-top: 20px;
+    }
+    header .logo {
+        color: black;
+        cursor: default;
+    }
+    .menu li {
+        margin-top: 40px;
+    }
+    .menu li a {
+        padding: 10px;
+    }
+    .open-menu, .close-menu {
+        display: block;
+    }
+    #check:checked ~ .menu {
+        right: 0;
+    }
+}
+
+@media(max-width: 1080px){
+    #hiddenslider{
+        display: none;
+    }
+    #hiddenimg {
+        display: none;
+    }
+}
+
+/*----MEDIA QUERIES------*/
+
+@media(max-width: 1080px){
+    label{
+        display: block;
+    }
+    .filter form {
+        text-align: left;
+        padding-bottom: 15px;
+    }
+}
+
+@media(max-width: 1080px){
+    .movies-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+    }
+    .proximos .peliculas2 .movies-container {
+        width: 650px;
+        display: flex;
+        gap: 0.5rem;
+    }
+}
+
+@media(max-width: 770px){
+    .proximos .peliculas2 .movies-container .card-prox .sinopsis {
+        display: none;
+    }
+    .proximos .peliculas2 .movies-container {
+        width: 280px;
+        display: flex;
+        gap: 0.5rem;
+    }
+    .candy-gallery div img {
+        width: 300px;
+        height: 220px;
+        align-items: center;
+    }
+}
+
+@media(max-width: 1380px){
+    .candy-gallery {
+        flex-direction: column;
+    }
+}

@@ -120,7 +120,7 @@ header nav ul {
         transition: all 0.2s ease-in-out;
         padding-top: 20px;
     }
-    .logo {
+    header .logo {
         color: black;
         cursor: default;
     }
@@ -213,23 +213,17 @@ header nav ul {
     grid-template-columns: repeat(auto-fit, minmax(160px,auto));
     gap: 1rem;
     padding: 10px;
+    padding-bottom: 20px;
     text-align: center;
     align-items: center;
-  }
-
+}
 
 .filter button {
-    background-color: whitesmoke;
-    color: black;
-    border: none;
-    border-radius: 8px;
     font-size: 16px;
     display: inline-block;
     width: 100px;
     padding: 10px 16px;
 }
-
-.filter button:hover {opacity: 0.8;}
 
 select {
     border: none;
@@ -353,15 +347,6 @@ label {
 
 /*----PROXIMOS ESTRENOS------*/
 
-.peliculas {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 15px;
-    align-items: center;
-    align-content: center;
-}
-
 .proximos .header {
     position: relative;
     display: flex;
@@ -374,6 +359,10 @@ label {
     width: 300px;
     display: flex;
     border-radius: 8px;
+}
+
+.proximos .searchbar i {
+    cursor: pointer;
 }
 
 .proximos .movies-container {
@@ -417,10 +406,6 @@ label {
 
 /* ----NOSOTROS-----*/
 
-.nosotros {
-    align-items: center;
-}
-
 .nosotros-container {
     max-width: 1800px;
     height: auto;
@@ -430,7 +415,7 @@ label {
     grid-template-columns: repeat(auto-fit, minmax(300px,auto));
     gap: 1rem;
     margin-top: 1rem;
-    margin-left: 0;
+    margin-bottom: 2.5rem;
 }
 
 .nosotros-container img {
@@ -473,21 +458,17 @@ iframe {
     margin-top: 2rem;
 }
 
-.candyshop .promos .card-promos .card-body {
-    align-content: center;
-    text-align: center;
-    font-size: 25px;
-}
+.candyshop .card-promos:hover {opacity: 0.8;}
 
 .candyshop .promos .card-promos img {
     margin-bottom: 10px;
+    height: 90%;
 }
 
-.candyshop .card-promos:hover {opacity: 0.8;}
-
 .candyshop .promos .card-body {
-    padding: 20px;
+    align-content: center;
     text-align: center;
+    padding: 20px;
     font-size: 25px;
 }
 
@@ -520,10 +501,6 @@ iframe {
 
 /* ----CINECLUB-----*/
 
-.cineclub {
-    align-items: center;
-}
-
 .club-container {
     max-width: 1400px;
     display: flex;
@@ -540,7 +517,6 @@ iframe {
 
 .club-container img {
     width: 600px;
-    height: auto;
     height: auto;
     object-fit: cover;
     margin-bottom: 15px;
