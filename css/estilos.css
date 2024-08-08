@@ -15,6 +15,28 @@ html {
   padding: 15px;
   color: white; }
 
+/* ----RESPONSIVE NAV-----*/
+.open-menu, .close-menu {
+  position: absolute;
+  width: 40px;
+  height: auto;
+  padding: 5px;
+  margin: 0;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
+  text-decoration: none !important; }
+
+.open-menu {
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%); }
+
+.close-menu {
+  top: 10px;
+  right: 20px; }
+
 /* ----BOOTSTRAP CAROUSEL OVERRIDE CLASSES-----*/
 .carousel-inner > .c-item > c-img {
   position: absolute;
@@ -108,31 +130,29 @@ header {
           color: #ff3552; }
       header nav ul .menu .close-menu {
         top: 10px;
-        right: 20px;
-        position: absolute;
-        width: 40px;
-        height: auto;
-        padding: 5px;
-        margin: 0;
-        color: white;
-        cursor: pointer;
-        font-size: 1.5rem;
-        display: none;
-        text-decoration: none; }
+        right: 20px; }
+        header nav ul .menu .close-menu i img {
+          filter: brightness(0) invert(1);
+          width: 40px;
+          height: auto;
+          padding: 5px;
+          margin-right: 5px;
+          align-items: center;
+          margin-bottom: 5px;
+          margin-top: 0; }
     header nav ul .open-menu {
       top: 50%;
       right: 10px;
-      transform: translateY(-50%);
-      position: absolute;
-      width: 40px;
-      height: auto;
-      padding: 5px;
-      margin: 0;
-      color: white;
-      cursor: pointer;
-      font-size: 1.5rem;
-      display: none;
-      text-decoration: none; }
+      transform: translateY(-50%); }
+      header nav ul .open-menu i img {
+        filter: brightness(0) invert(1);
+        width: 40px;
+        height: auto;
+        padding: 5px;
+        margin-right: 5px;
+        align-items: center;
+        margin-bottom: 5px;
+        margin-top: 0; }
 
 /* ------FILTER SECTION-------*/
 .filter {
