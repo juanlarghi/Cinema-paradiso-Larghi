@@ -33,10 +33,13 @@
     }
 }
 
-@media(max-width: 1080px){
+@media(max-width: 820px){
     #hiddenslider{
         display: none;
     }
+}
+
+@media(max-width: 1080px){
     #hiddenimg {
         display: none;
     }
