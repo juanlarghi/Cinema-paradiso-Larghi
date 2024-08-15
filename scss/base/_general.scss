@@ -1,6 +1,6 @@
-/*! ---FONTS--- */
+//! FONTS
 
-/*! ---RESET--- */
+//! RESET
 
 *{
     margin: 0;
@@ -14,13 +14,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.proximos, .cineclub, .nosotros, .candyshop, .candy-gallery {
-    background-color: slategray;
-    padding: 15px;
-    color: white;
-}
-
-/* ----RESPONSIVE NAV-----*/
+//! RESPONSIVE NAV
 
 .open-menu, .close-menu {
     position: absolute;
@@ -46,7 +40,7 @@ html {
     right: 20px;
 }
 
-/* ----BOOTSTRAP CAROUSEL OVERRIDE CLASSES-----*/
+//! BOOTSTRAP CAROUSEL OVERRIDE CLASSES
 
 .carousel-inner {
     > .c-item {
@@ -100,3 +94,43 @@ html {
     padding-right: 120px;
     text-align: right;
 }
+
+//! VARIABLES
+
+$primary-color: slategray;
+$secundary-color: black;
+$font-color: white;
+$hover-color: rgb(255, 53, 82);
+
+//! LISTAS 
+
+//! EXTENDS
+
+%flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//! MIXIN
+
+@mixin flex ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+//! CONDITIONALS
+
+@mixin invert-mode ($secundary-color: black){
+    @if $secundary-color == black{
+        color: white;
+    }
+    @else {
+        color: black;  
+    }
+}
+
+
+
+

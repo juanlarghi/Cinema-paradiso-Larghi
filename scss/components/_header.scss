@@ -1,11 +1,10 @@
 header{
     position: sticky;
-    background-color: black;
+    background-color: $secundary-color;
     width: 100%;
     padding: 15px;
     top: 0;
     z-index: 1000;
-    color: white;
     display: flex;
     justify-content: space-between;
     text-decoration: none;
@@ -14,7 +13,7 @@ header{
         margin-top: 5px;
         font-size: 1.5rem;
         font-weight: 600;
-        color: white;
+        color: $font-color;
         display: flex;
         column-gap: 0.5rem;
         align-items: center;
@@ -48,10 +47,10 @@ header{
                     a{
                         font-size: 1.1rem;
                         font-weight: 600;
-                        color: white;
+                        color: $font-color;
                         text-decoration: none;
                         &:hover{
-                            color: rgb(255, 53, 82);
+                            color: $hover-color;
                         }
                     }
                 }
