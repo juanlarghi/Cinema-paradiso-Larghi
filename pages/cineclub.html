@@ -28,7 +28,7 @@
                     <!-- Enlaces relativos -->
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="./nosotros.html">Nosotros</a></li>
-                    <li><a href="./proximos.html">Proximos Estrenos</a></li>
+                    <li><a href="./proximos.html">Próximos Estrenos</a></li>
                     <li><a href="./candyshop.html">Candyshop</a></li>
                     <li><a href="./cineclub.html">CineClub</a></li>
                     <!-- Enlaces internos -->
@@ -143,6 +143,33 @@
         <a href="https://x.com/" target="_blank"><img src="../img/x.png" alt="x icon" class="icon"></a>
         <a href="https://www.whatsapp.com/" target="_blank"><img src="../img/whatsapp.png" alt="whatsapp icon" class="icon"></a>
     </div>
+    <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 </footer>
+<script>
+// Aparece boton
+let mybutton = document.getElementById("btn-back-to-top");
+// Cuando el usuario scrolls abajo 20px desde arriba, aparece el boton
+window.onscroll = function () {
+scrollFunction();
+};
+function scrollFunction() {
+if (
+document.body.scrollTop > 20 ||
+document.documentElement.scrollTop > 20
+) {
+mybutton.style.display = "block";
+} else {
+mybutton.style.display = "none";
+}
+}
+// Cuando se hace click en el boton sube hasta arriba
+mybutton.addEventListener("click", backToTop);
+function backToTop() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+</script>
 </body>
 </html>

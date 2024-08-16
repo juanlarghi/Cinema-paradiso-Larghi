@@ -6,9 +6,9 @@
         <meta name="description" content="Cinema Paradiso: muchos mas que peliculas. Entradas online. Estrenos todos los jueves.">
         <meta name="keywords" content="Cinema, Paradiso, cine, peliculas, entradas, online, estrenos, cineclub, candyshop, pochoclo">
         <!-- Protocole Open Graph -->
-        <meta property="og:type" content="">
-        <meta property="og:title" content="">
-        <meta property="og:description" content="">
+        <meta property="og:type" content="Ticket online">
+        <meta property="og:title" content="Cinema Paradiso">
+        <meta property="og:description" content="Cine web page">
         <meta property="og:url" content="">
         <meta property="og:image" content="">
         <title>Cinema Paradiso</title>
@@ -28,13 +28,13 @@
             <i><img src="./img/camara.png" alt="logo"></i>Cinema Paradiso
         </a>
         <nav>  
-            <ul class="navbar">
+            <ul class="navbar" id="top">
                 <input type="checkbox" id="check">
                 <span class="menu">
                     <!-- Enlaces relativos -->
                     <li><a href="./index.html">Inicio</a></li>
                     <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="./pages/proximos.html">Proximos Estrenos</a></li>
+                    <li><a href="./pages/proximos.html">Próximos Estrenos</a></li>
                     <li><a href="./pages/candyshop.html">Candyshop</a></li>
                     <li><a href="./pages/cineclub.html">CineClub</a></li>
                     <!-- Enlaces internos -->
@@ -254,6 +254,33 @@
             <a href="https://x.com/" target="_blank"><img src="./img/x.png" alt="x icon" class="icon"></a>
             <a href="https://www.whatsapp.com/" target="_blank"><img src="./img/whatsapp.png" alt="whatsapp icon" class="icon"></a>
         </div>
+        <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
     </footer>
+<script>
+// Aparece boton
+let mybutton = document.getElementById("btn-back-to-top");
+// Cuando el usuario scrolls abajo 20px desde arriba, aparece el boton
+window.onscroll = function () {
+scrollFunction();
+};
+function scrollFunction() {
+if (
+document.body.scrollTop > 20 ||
+document.documentElement.scrollTop > 20
+) {
+mybutton.style.display = "block";
+} else {
+mybutton.style.display = "none";
+}
+}
+// Cuando se hace click en el boton sube hasta arriba
+mybutton.addEventListener("click", backToTop);
+function backToTop() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+</script>
 </body>
 </html>
