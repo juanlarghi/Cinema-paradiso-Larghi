@@ -160,7 +160,7 @@
     background-color: $primary-color;
     padding: 15px;
     color: $font-color;
-    .h5 {
+    h5 {
         text-align: justify;
     }
     .nosotros-container{
@@ -268,13 +268,13 @@
     padding: 15px;
     color: $font-color;
     h5{
-        margin-bottom: 0;
+        margin-bottom: 15px;
     }
     .club-container{
         max-width: 1400px;
         display: flex;
         position: relative;
-        gap: 2rem;
+        gap: 1rem;
         margin-top: 0;
         align-items: center;
     
@@ -293,6 +293,19 @@
             .card-sub{
                 padding: 5px;
                 margin-top: 0;
+                h3 {
+                    font-weight: 600;
+                }
+                form {
+                    .genero-fav {
+                        div {
+                            select {
+                                color: $primary-color;
+                                background-color: whitesmoke;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

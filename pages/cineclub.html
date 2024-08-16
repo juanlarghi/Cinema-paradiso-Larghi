@@ -47,91 +47,93 @@
                 <div class="cineclub-img" id="hiddenimg">
                     <img src="https://scontent.fafa2-1.fna.fbcdn.net/v/t39.30808-6/360095642_587329393558451_8923946546319696782_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=sgcj3CgK6HUQ7kNvgHLN6zu&_nc_ht=scontent.fafa2-1.fna&oh=00_AYAYsnw36Z5rGcBLAYA35mhWFoCAPb3UZ0c0eKAq2N9qbw&oe=66C069A8" alt="cineclub">
                 </div>
-                <div class="card-registration sub-form">
-                    <div class="card-body p-2 p-md-5 card-sub">
-                        <h3 class="mb-sm-2 pb-1 pb-md-0 mb-md-2">Ingresa tus datos</h3>
-                        <form>
-                
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <div data-mdb-input-init class="form-outline">
-                                    <label class="form-label" for="firstName">Nombre</label>
-                                    <input type="text" id="firstName" class="form-control form-control-lg" />
+                <div class="col-12 col-lg-9 col-xl-7">
+                    <div class="card-registration sub-form">
+                        <div class="card-body p-2 p-md-5 card-sub">
+                            <h3 class="mb-sm-2 pb-1 pb-md-0 mb-md-4">Ingresa tus datos</h3>
+                            <form>
+                            
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div data-mdb-input-init class="form-outline">
+                                        <label class="form-label" for="firstName">Nombre</label>
+                                        <input type="text" id="firstName" class="form-control form-control-lg" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div data-mdb-input-init class="form-outline">
+                                        <label class="form-label" for="lastName">Apellido</label>
+                                        <input type="text" id="lastName" class="form-control form-control-lg" />
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 mb-4">
-                                <div data-mdb-input-init class="form-outline">
-                                    <label class="form-label" for="lastName">Apellido</label>
-                                    <input type="text" id="lastName" class="form-control form-control-lg" />
+
+                            <div class="row">
+                                <div class="col-md-6 mb-4 d-flex align-items-center">
+                                  <div data-mdb-input-init class="form-outline datepicker w-100">
+                                      <label for="birthdayDate" class="form-label">Fecha de Nacimiento</label>
+                                      <input type="text" class="form-control form-control-lg" id="birthdayDate" />
+                                  </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                   <h6 class="mb-2 pb-1">Genero: </h6>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
+                                          value="option1"/>
+                                        <label class="form-check-label" for="femaleGender">Femenino</label>
+                                      </div>
+                                  
+                                      <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
+                                            value="option2" />
+                                            <label class="form-check-label" for="maleGender">Masculino</label>
+                                      </div>
+                                  
+                                      <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"
+                                            value="option3" />
+                                            <label class="form-check-label" for="otherGender">Otro</label>
+                                      </div>
                                 </div>
                             </div>
-                        </div>
+                            <div class="row">
+                                  <div class="col-md-6 mb-4 pb-2">
+                                        <div data-mdb-input-init class="form-outline">
+                                            <label class="form-label" for="emailAddress">Email</label>
+                                            <input type="email" id="emailAddress" class="form-control form-control-lg" />
+                                        </div>
+                                  </div>
+                                  <div class="col-md-6 mb-4 pb-2">
+                                        <div data-mdb-input-init class="form-outline">
+                                            <label class="form-label" for="phoneNumber">Telefono</label>
+                                            <input type="tel" id="phoneNumber" class="form-control form-control-lg" />
+                                        </div>
+                                  </div>
+                            </div>
                         
-                        <div class="row">
-                            <div class="col-md-6 mb-4 d-flex align-items-center">
-                              <div data-mdb-input-init class="form-outline datepicker w-100">
-                                  <label for="birthdayDate" class="form-label">Fecha de Nacimiento</label>
-                                  <input type="text" class="form-control form-control-lg" id="birthdayDate" />
-                              </div>
-                            </div>
-                            <div class="col-md-6 mb-4">
-                               <h6 class="mb-2 pb-1">Genero: </h6>
-                                  <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
-                                      value="option1"/>
-                                    <label class="form-check-label" for="femaleGender">Femenino</label>
-                                  </div>
-                              
-                                  <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
-                                        value="option2" />
-                                        <label class="form-check-label" for="maleGender">Masculino</label>
-                                  </div>
-                              
-                                  <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"
-                                        value="option3" />
-                                        <label class="form-check-label" for="otherGender">Otro</label>
-                                  </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                              <div class="col-md-6 mb-4 pb-2">
-                                    <div data-mdb-input-init class="form-outline">
-                                        <label class="form-label" for="emailAddress">Email</label>
-                                        <input type="email" id="emailAddress" class="form-control form-control-lg" />
-                                    </div>
-                              </div>
-                              <div class="col-md-6 mb-4 pb-2">
-                                    <div data-mdb-input-init class="form-outline">
-                                        <label class="form-label" for="phoneNumber">Telefono</label>
-                                        <input type="tel" id="phoneNumber" class="form-control form-control-lg" />
-                                    </div>
-                              </div>
-                        </div>
-                
-                        <div class="row">
-                            <div class="col-md-4 mb-2">
+                            <div class="row genero-fav">
                                 <label class="form-label">Genero Favorito</label>
-                                <select class="select form-control-lg">
-                                    <option value="">(elija una opcion)</option>
-                                    <option value="2">Accion</option>
-                                    <option value="3">Terror</option>
-                                    <option value="4">Drama</option>
-                                    <option value="4">Infantil</option>
-                                    <option value="4">Comedia</option>
-                                </select>
-                            </div>   
+                                <div class="col-12">
+                                    <select class="select form-control-lg">
+                                        <option value="">(elija una genero)</option>
+                                        <option value="2">Accion</option>
+                                        <option value="3">Terror</option>
+                                        <option value="4">Drama</option>
+                                        <option value="4">Infantil</option>
+                                        <option value="4">Comedia</option>
+                                    </select>
+                                </div>   
+                            </div>
+                        
+                            <div class="mt-4 pt-2">
+                              <input data-mdb-ripple-init class="btn btn-danger btn-lg" type="submit" value="Registrarse" />
+                            </div>
+                        
+                            </form>
                         </div>
-                
-                        <div class="mt-4 pt-2">
-                          <input data-mdb-ripple-init class="btn btn-danger btn-lg" type="submit" value="Registrarse" />
-                        </div>
-                
-                        </form>
-                    </div>
-                </div>  
-            </div>
+                    </div>  
+                </div>
+            </div>    
         </section>
     </main>
 <footer id="contactos">

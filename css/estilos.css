@@ -255,7 +255,7 @@ header {
   background-color: slategray;
   padding: 15px;
   color: white; }
-  .nosotros .h5 {
+  .nosotros h5 {
     text-align: justify; }
   .nosotros .nosotros-container {
     max-width: 1800px;
@@ -339,12 +339,12 @@ header {
   padding: 15px;
   color: white; }
   .cineclub h5 {
-    margin-bottom: 0; }
+    margin-bottom: 15px; }
   .cineclub .club-container {
     max-width: 1400px;
     display: flex;
     position: relative;
-    gap: 2rem;
+    gap: 1rem;
     margin-top: 0;
     align-items: center; }
     .cineclub .club-container .cineclub-img img {
@@ -359,6 +359,11 @@ header {
       .cineclub .club-container .sub-form .card-sub {
         padding: 5px;
         margin-top: 0; }
+        .cineclub .club-container .sub-form .card-sub h3 {
+          font-weight: 600; }
+        .cineclub .club-container .sub-form .card-sub form .genero-fav div select {
+          color: slategray;
+          background-color: whitesmoke; }
 
 footer {
   width: 100%;
