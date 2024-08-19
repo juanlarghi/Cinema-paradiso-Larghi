@@ -290,6 +290,8 @@ header {
   background-color: slategray;
   padding: 15px;
   color: white; }
+  .candyshop h5 {
+    text-align: justify; }
   .candyshop .promos {
     display: flex;
     justify-content: center; }
@@ -300,16 +302,18 @@ header {
       grid-template-columns: 100%;
       gap: 1rem;
       margin-top: 2rem; }
-      .candyshop .promos .col-promos .card-promos img {
-        margin-bottom: 10px;
-        height: 90%; }
-      .candyshop .promos .col-promos .card-promos .card-body {
-        align-content: center;
-        text-align: center;
-        padding: 20px;
-        font-size: 25px; }
-      .candyshop .promos .col-promos .card-promos:hover {
-        opacity: 0.8; }
+      .candyshop .promos .col-promos .card-promos {
+        cursor: pointer; }
+        .candyshop .promos .col-promos .card-promos img {
+          margin-bottom: 10px;
+          height: 90%; }
+        .candyshop .promos .col-promos .card-promos .card-body {
+          align-content: center;
+          text-align: center;
+          padding: 20px;
+          font-size: 25px; }
+        .candyshop .promos .col-promos .card-promos:hover {
+          opacity: 0.8; }
 
 .candy-gallery {
   display: flex;
@@ -339,7 +343,8 @@ header {
   padding: 15px;
   color: white; }
   .cineclub h5 {
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    text-align: justify; }
   .cineclub .club-container {
     max-width: 1400px;
     display: flex;
@@ -436,13 +441,21 @@ footer {
     align-items: center;
     row-gap: 20px; }
   .proximos .peliculas2 .movies-container {
-    width: 650px;
     display: flex;
+    width: 650px;
     gap: 0.5rem; } }
 
+@media (max-width: 420px) {
+  .movies-container .poster {
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0;
+    padding-bottom: 20px; } }
+
 @media (max-width: 770px) {
-  .proximos .peliculas2 .movies-container .card-prox .sinopsis {
-    display: none; }
+  .proximos .peliculas2 .movies-container .card-prox .card-body .sinopsis {
+    display: none !important; }
   .proximos .peliculas2 .movies-container {
     width: 280px;
     display: flex;

@@ -156,6 +156,7 @@
 }
 
 //! NOSOTROS
+
 .nosotros {
     background-color: $primary-color;
     padding: 15px;
@@ -205,6 +206,9 @@
     background-color: $primary-color;
     padding: 15px;
     color: $font-color;
+    h5 {
+        text-align: justify;
+    }
     .promos{
         display: flex;
         justify-content: center;
@@ -216,6 +220,7 @@
             gap: 1rem;
             margin-top: 2rem;
             .card-promos{
+                cursor: pointer;
                 img{
                     margin-bottom: 10px;
                     height: 90%;
@@ -269,6 +274,7 @@
     color: $font-color;
     h5{
         margin-bottom: 15px;
+        text-align: justify;
     }
     .club-container{
         max-width: 1400px;

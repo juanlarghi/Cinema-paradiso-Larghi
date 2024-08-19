@@ -66,15 +66,25 @@
         row-gap: 20px;
     }
     .proximos .peliculas2 .movies-container {
-        width: 650px;
         display: flex;
+        width: 650px;
         gap: 0.5rem;
     }
 }
 
+@media(max-width: 420px){
+    .movies-container .poster {
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin: 0;
+        padding-bottom: 20px;
+    }
+}
+
 @media(max-width: 770px){
-    .proximos .peliculas2 .movies-container .card-prox .sinopsis {
-        display: none;
+    .proximos .peliculas2 .movies-container .card-prox .card-body .sinopsis {
+        display: none !important;
     }
     .proximos .peliculas2 .movies-container {
         width: 280px;
