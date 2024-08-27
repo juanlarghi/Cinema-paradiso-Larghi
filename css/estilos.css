@@ -346,11 +346,12 @@ header {
     margin-bottom: 15px;
     text-align: justify; }
   .cineclub .club-container {
-    max-width: 1400px;
+    max-width: 1800px;
     display: flex;
     position: relative;
-    gap: 1rem;
+    gap: 4rem;
     margin-top: 0;
+    margin-right: 20px;
     align-items: center; }
     .cineclub .club-container .cineclub-img img {
       width: 550px;
